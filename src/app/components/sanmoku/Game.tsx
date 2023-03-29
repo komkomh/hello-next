@@ -19,7 +19,7 @@ export const Game = () => {
       return
     }
 
-    // oxを書く
+    // oxを書く -> ここで更新なければいい
     const values = board.put(index, player.player);
     if (values.length === 0) {
       return
@@ -33,6 +33,7 @@ export const Game = () => {
       return
     }
 
+    // 引き分けなら
     if (board.isDraw(values)) {
       // ゲームを終了する
       setGamePlaying(false)
