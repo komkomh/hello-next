@@ -1,5 +1,5 @@
 "use client";
-import {Player, SquareValue} from "@/app/types";
+import {SquareValue} from "@/app/types";
 import styled from "styled-components";
 
 type Props = {

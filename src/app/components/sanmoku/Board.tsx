@@ -1,7 +1,7 @@
 "use client";
 import {Player, SquareValue} from "@/app/types";
 import styled from "styled-components";
-import {Square} from "@/components/Square";
+import {Square} from "@/app/components/sanmoku/Square";
 
 type Props = {
   player: Player,

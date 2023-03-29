@@ -1,8 +1,9 @@
 "use client";
-import {Board} from "@/components/Board";
+import {Board} from "@/app/components/sanmoku/Board";
 import styled from "styled-components";
 import {useState} from "react";
-import {useBoard, usePlayer} from "@/hooks/SanmokuHooks";
+import {usePlayer} from "@/app/hooks/sanmoku/Player";
+import {useBoard} from "@/app/hooks/sanmoku/Board";
 
 export const Game = () => {
 

@@ -1,17 +1,6 @@
 import {useState} from "react";
 import {Player, SquareValue} from "@/app/types";
 
-export const usePlayer = () => {
-  const [player, setPlayer] = useState<Player>('o')
-  const changePlayer = (): Player => {
-    const nextPlayer = player === 'o' ? 'x' : 'o'
-    setPlayer(nextPlayer)
-    return nextPlayer
-  }
-  const reset = () => setPlayer('o')
-  return {player, changePlayer, reset}
-}
-
 export const useBoard = () => {
   const [values, setValues] = useState<SquareValue[]>(['', '', '', '', '', '', '', '', ''])
 

@@ -1,6 +1,6 @@
 
 import styles from './page.module.css'
-import {Game} from "@/components/Game";
+import {Game} from "@/app/components/sanmoku/Game";
 
 export default function Home() {
   return (
